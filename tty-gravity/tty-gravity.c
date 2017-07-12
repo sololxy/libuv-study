@@ -3,7 +3,7 @@
  * 学习libnv的测试程序，使用nodejs代码库中的libuv源码编译后测试。nodejs代码取之
  * 这里:https://github.com/nodejs/node ,我使用的是nodejs-8.x。
  *
- * 工程管理使用CMake(http://www.cmake.org)。
+ * 工程管理使用CMake(https://www.cmake.org)。
  *
  * libuv的教程参考：http://luohaha.github.io/Chinese-uvbook
  */

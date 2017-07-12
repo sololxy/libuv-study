@@ -18,3 +18,4 @@ link_directories(${NODEJS_ROOT}/Release)
 link_directories(${NODEJS_ROOT}/Release/lib)
 
 add_subdirectory(tty-gravity)
+add_subdirectory(helloworld)
