@@ -17,4 +17,4 @@ include_directories(${NODEJS_DEPS}/zlib)
 link_directories(${NODEJS_ROOT}/Release)
 link_directories(${NODEJS_ROOT}/Release/lib)
 
-add_subdirectory(uv-tools)
+add_subdirectory(tty-gravity)
