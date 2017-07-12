@@ -23,3 +23,4 @@ link_directories(${NODEJS_ROOT}/Release/lib)
 
 add_subdirectory(tty-gravity)
 add_subdirectory(helloworld)
+add_subdirectory(idle-basic)
