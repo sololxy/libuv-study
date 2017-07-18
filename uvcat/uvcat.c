@@ -1,4 +1,4 @@
-﻿/** Copyright luoxiangyong. E-mail: solo_lxy@126.com
+/** Copyright luoxiangyong. E-mail: solo_lxy@126.com
  *
  * 学习libnv的测试程序，使用nodejs代码库中的libuv源码编译后测试。nodejs代码取之
  * 这里:https://github.com/nodejs/node ,我使用的是nodejs-8.x。
@@ -21,6 +21,7 @@
 
 void on_read(uv_fs_t *req);
 
+// handles
 uv_fs_t open_req;
 uv_fs_t read_req;
 uv_fs_t write_req;
@@ -28,6 +29,7 @@ uv_fs_t write_req;
 static char buffer[1024];
 static uv_buf_t iov;
 
+// callbacks
 void on_write(uv_fs_t *req) {
     if (req->result < 0) {
         fprintf(stderr, "Write error: %s\n", uv_strerror((int)req->result));
@@ -36,6 +38,7 @@ void on_write(uv_fs_t *req) {
         uv_fs_read(uv_default_loop(), &read_req, open_req.result, &iov, 1, -1, on_read);
     }
 }
+
 void on_read(uv_fs_t *req) {
     if (req->result < 0) {
         fprintf(stderr, "Read error: %s\n", uv_strerror(req->result));
