@@ -4,6 +4,9 @@ Copyright luoxiangyong.
 
 E-mail: solo_lxy@126.com
 
+**本项目是我再学习libuv过程中参照官方文档里面的例子整理的，可以使用cmake简单编译，主要用于
+个人学习。**
+
 [libuv](http://libuv.org)是 Node 的新跨平台抽象层，用于抽象 Windows 的 IOCP 及 Unix
 的libev。作者打算在这个库的包含所有平台的差异性。
 
